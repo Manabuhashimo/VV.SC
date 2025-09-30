@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('videos', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('youtube_url');
+            $table->string('thumbnail_url')->nullable();
+            $table->string('duration', 10)->nullable();
+            $table->string('views', 20)->nullable();
+            $table->string('likes', 20)->nullable();
+            $table->string('category', 50)->nullable();
+            $table->string('platform', 20)->default('youtube');
+            $table->unsignedBigInteger('article_id')->nullable();
+            $table->foreignId('location_id')->nullable()->constrained()->onDelete('set null');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('videos');
+    }
+};

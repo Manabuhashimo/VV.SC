@@ -14,10 +14,18 @@ yarn-error.log*
 # Docker volumes
 mysql/data/
 
-# Backend
-backend/vendor/
-backend/.env
-backend/composer.lock
+# Backend (Laravel)
+backend/src/vendor/
+backend/src/.env
+backend/src/.env.backup
+backend/src/composer.lock
+backend/src/node_modules/
+backend/src/storage/*.key
+backend/src/public/storage
+backend/src/public/hot
+backend/src/public/build
+backend/src/.phpunit.result.cache
+backend/src/database/database.sqlite
 
 # Frontend
 frontend/node_modules/

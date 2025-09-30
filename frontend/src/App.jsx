@@ -7,11 +7,13 @@ import InstagramPosts from './pages/InstagramPosts';
 import Articles from './pages/Articles';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
+import LocationPage from './pages/LocationPage';
 import './styles/global.css';
 import './styles/components.css';
 import './styles/pages.css';
 import './styles/about.css';
 import './styles/legal.css';
+import './styles/locations.css';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/articles" element={<Articles />} />
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/:slug" element={<LocationPage />} />
       </Routes>
     </Router>
   );
