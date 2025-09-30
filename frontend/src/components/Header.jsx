@@ -22,9 +22,9 @@ const Header = () => {
           </a>
           
           <nav className="nav">
-            <a href="/videos" className="nav-link">動画</a>
+            <a href="/videos/youtube" className="nav-link">YouTube</a>
+            <a href="/videos/tiktok" className="nav-link">TikTok</a>
             <a href="/articles" className="nav-link">記事</a>
-            <a href="/contact" className="nav-link">問い合わせ</a>
           </nav>
 
           <div className="social-links">

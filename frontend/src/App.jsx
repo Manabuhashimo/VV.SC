@@ -4,9 +4,13 @@ import Home from './pages/Home';
 import YouTubeVideos from './pages/YouTubeVideos';
 import TikTokVideos from './pages/TikTokVideos';
 import Articles from './pages/Articles';
+import About from './pages/About';
+import Privacy from './pages/Privacy';
 import './styles/global.css';
 import './styles/components.css';
 import './styles/pages.css';
+import './styles/about.css';
+import './styles/legal.css';
 
 function App() {
   return (
@@ -16,6 +20,8 @@ function App() {
         <Route path="/videos/youtube" element={<YouTubeVideos />} />
         <Route path="/videos/tiktok" element={<TikTokVideos />} />
         <Route path="/articles" element={<Articles />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </Router>
   );
