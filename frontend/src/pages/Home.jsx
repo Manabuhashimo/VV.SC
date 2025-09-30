@@ -196,11 +196,11 @@ const Home = () => {
           EXPLORE BY <span className="logo-yellow">LOCATION</span>
         </h2>
 
-        <div className="locations-grid">
+        <ScrollContainer>
           {locations.map((location) => (
             <LocationCard key={location.id} location={location} />
           ))}
-        </div>
+        </ScrollContainer>
       </section>
 
       <Footer />
