@@ -22,45 +22,96 @@ export const categories = [
     }
 ];
 
-// ビデオデータ（モックデータ）
-export const videosData = [
-    {
-        id: 1,
-        title: "Tokyo Underground: Hip-Hop Scene 2025",
-        thumbnail: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=450&fit=crop",
-        duration: "12:45",
-        views: "125K",
-        category: "Hip-Hop",
-        articleId: 1
-    },
-    {
-        id: 2,
-        title: "NYC Graffiti Masters: Street Art Documentary",
-        thumbnail: "https://images.unsplash.com/photo-1561817255-55db3e1b3add?w=800&h=450&fit=crop",
-        duration: "18:20",
-        views: "89K",
-        category: "Graffiti",
-        articleId: 2
-    },
-    {
-        id: 3,
-        title: "Skateboarding Revolution in LA",
-        thumbnail: "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=800&h=450&fit=crop",
-        duration: "15:30",
-        views: "200K",
-        category: "Skateboarding",
-        articleId: 3
-    },
-    {
-        id: 4,
-        title: "Paris Fashion Week: Street Style",
-        thumbnail: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&h=450&fit=crop",
-        duration: "10:15",
-        views: "156K",
-        category: "Fashion",
-        articleId: 4
-    }
+// YouTubeビデオデータ
+export const youtubeVideos = [
+  {
+    id: 1,
+    title: "Tokyo Underground: Hip-Hop Scene 2025",
+    thumbnail: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=450&fit=crop",
+    duration: "12:45",
+    views: "125K",
+    category: "Music",
+    articleId: 1,
+    platform: "youtube"
+  },
+  {
+    id: 2,
+    title: "NYC Graffiti Masters: Street Art Documentary",
+    thumbnail: "https://images.unsplash.com/photo-1561817255-55db3e1b3add?w=800&h=450&fit=crop",
+    duration: "18:20",
+    views: "89K",
+    category: "Art",
+    articleId: 2,
+    platform: "youtube"
+  },
+  {
+    id: 3,
+    title: "Skateboarding Revolution in LA",
+    thumbnail: "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=800&h=450&fit=crop",
+    duration: "15:30",
+    views: "200K",
+    category: "Sport",
+    articleId: 3,
+    platform: "youtube"
+  },
+  {
+    id: 4,
+    title: "Paris Fashion Week: Street Style",
+    thumbnail: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&h=450&fit=crop",
+    duration: "10:15",
+    views: "156K",
+    category: "Fashion",
+    articleId: 4,
+    platform: "youtube"
+  }
 ];
+
+// TikTokビデオデータ
+export const tiktokVideos = [
+  {
+    id: 5,
+    title: "Street Dance Battle in Seoul",
+    thumbnail: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=450&fit=crop",
+    duration: "0:45",
+    views: "2.3M",
+    category: "Music",
+    articleId: 5,
+    platform: "tiktok"
+  },
+  {
+    id: 6,
+    title: "Urban Fashion Lookbook",
+    thumbnail: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=450&fit=crop",
+    duration: "0:30",
+    views: "1.8M",
+    category: "Fashion",
+    articleId: 6,
+    platform: "tiktok"
+  },
+  {
+    id: 7,
+    title: "Street Art Time-lapse",
+    thumbnail: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=450&fit=crop",
+    duration: "0:58",
+    views: "950K",
+    category: "Art",
+    articleId: 7,
+    platform: "tiktok"
+  },
+  {
+    id: 8,
+    title: "Skateboard Tricks Compilation",
+    thumbnail: "https://images.unsplash.com/photo-1520338258135-607c3cda82b1?w=800&h=450&fit=crop",
+    duration: "0:42",
+    views: "3.1M",
+    category: "Sport",
+    articleId: 8,
+    platform: "tiktok"
+  }
+];
+
+// 後方互換性のため
+export const videosData = [...youtubeVideos, ...tiktokVideos];
 
 // 記事データ（モックデータ）
 export const articlesData = [

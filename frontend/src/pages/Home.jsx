@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import VideoCard from '../components/VideoCard';
 import ArticleCard from '../components/ArticleCard';
 import CategoryCard from '../components/CategoryCard';
-import { videosData, articlesData, categories } from '../models/data';
+import { youtubeVideos, tiktokVideos, articlesData, categories } from '../models/data';
 
 const Home = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -20,20 +20,44 @@ const Home = () => {
     <div className="container">
       <Header />
 
-      {/* Featured Videos */}
+      {/* YouTube Videos */}
       <section className="section mt-20">
         <div className="section-header">
           <h2 className="section-title">
-            FEATURED <span className="logo-yellow">VIDEOS</span>
+            YOUTUBE <span className="logo-yellow">VIDEOS</span>
           </h2>
-          <a href="/videos" className="view-all-link">
+          <a href="/videos/youtube" className="view-all-link">
             View All <ChevronRight size={20} />
           </a>
         </div>
 
         <div className="scroll-container scrollbar-hide">
           <div className="scroll-content">
-            {videosData.map((video) => (
+            {youtubeVideos.map((video) => (
+              <VideoCard 
+                key={video.id} 
+                video={video} 
+                onPlay={handlePlayVideo}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TikTok Videos */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">
+            TIKTOK <span className="logo-yellow">VIDEOS</span>
+          </h2>
+          <a href="/videos/tiktok" className="view-all-link">
+            View All <ChevronRight size={20} />
+          </a>
+        </div>
+
+        <div className="scroll-container scrollbar-hide">
+          <div className="scroll-content">
+            {tiktokVideos.map((video) => (
               <VideoCard 
                 key={video.id} 
                 video={video} 

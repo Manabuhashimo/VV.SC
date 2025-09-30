@@ -163,8 +163,40 @@
   transition: transform 0.2s;
 }
 
+.play-button-youtube {
+  background-color: #FF0000;
+}
+
+.play-button-tiktok {
+  background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
+}
+
 .video-card:hover .play-button {
   transform: scale(1.1);
+}
+
+.platform-badge {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.platform-badge-youtube {
+  color: #FF0000;
+  border: 2px solid #FF0000;
+}
+
+.platform-badge-tiktok {
+  color: #00f2ea;
+  border: 2px solid #00f2ea;
 }
 
 .video-duration {
