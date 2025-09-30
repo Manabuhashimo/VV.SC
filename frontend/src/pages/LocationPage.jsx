@@ -143,13 +143,11 @@ const LocationPage = () => {
             </h2>
           </div>
 
-          <div className="scroll-container scrollbar-hide">
-            <div className="scroll-content">
-              {videos.map((video) => (
-                <VideoCard key={video.id} video={video} />
-              ))}
-            </div>
-          </div>
+          <ScrollContainer>
+            {videos.map((video) => (
+              <VideoCard key={video.id} video={video} />
+            ))}
+          </ScrollContainer>
         </section>
       )}
 
@@ -162,13 +160,11 @@ const LocationPage = () => {
             </h2>
           </div>
 
-          <div className="scroll-container scrollbar-hide">
-            <div className="scroll-content">
-              {articles.map((article) => (
-                <ArticleCard key={article.id} article={article} />
-              ))}
-            </div>
-          </div>
+          <ScrollContainer>
+            {articles.map((article) => (
+              <ArticleCard key={article.id} article={article} />
+            ))}
+          </ScrollContainer>
         </section>
       )}
 
