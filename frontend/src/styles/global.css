@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.view-all-link:hover {
+  color: #fde047;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+/* Categories */
+.categories-section {
+  padding: 5rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.categories-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .categories-title {
+    font-size: 3rem;
+  }
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #000, #111827);
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
