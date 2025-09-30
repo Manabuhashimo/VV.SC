@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="logo-white">C</span>
             </div>
             <p className="footer-description">
-              世界中のストリートカルチャーを記録し、祝福する。
+              世界中のストリートカルチャーを祝福する。
             </p>
           </div>
           <div>
