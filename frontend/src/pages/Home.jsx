@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import VideoCard from '../components/VideoCard';
 import ArticleCard from '../components/ArticleCard';
 import LocationCard from '../components/LocationCard';
+import ScrollContainer from '../components/ScrollContainer';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
@@ -116,17 +117,15 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="scroll-container scrollbar-hide">
-          <div className="scroll-content">
-            {youtubeVideos.map((video) => (
-              <VideoCard 
-                key={video.id} 
-                video={video} 
-                onPlay={handlePlayVideo}
-              />
-            ))}
-          </div>
-        </div>
+        <ScrollContainer>
+          {youtubeVideos.map((video) => (
+            <VideoCard 
+              key={video.id} 
+              video={video} 
+              onPlay={handlePlayVideo}
+            />
+          ))}
+        </ScrollContainer>
       </section>
 
       {/* TikTok Videos */}
@@ -140,17 +139,15 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="scroll-container scrollbar-hide">
-          <div className="scroll-content">
-            {tiktokVideos.map((video) => (
-              <VideoCard 
-                key={video.id} 
-                video={video} 
-                onPlay={handlePlayVideo}
-              />
-            ))}
-          </div>
-        </div>
+        <ScrollContainer>
+          {tiktokVideos.map((video) => (
+            <VideoCard 
+              key={video.id} 
+              video={video} 
+              onPlay={handlePlayVideo}
+            />
+          ))}
+        </ScrollContainer>
       </section>
 
       {/* Instagram Posts */}
@@ -164,17 +161,15 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="scroll-container scrollbar-hide">
-          <div className="scroll-content">
-            {instagramPosts.map((post) => (
-              <VideoCard 
-                key={post.id} 
-                video={post} 
-                onPlay={handlePlayVideo}
-              />
-            ))}
-          </div>
-        </div>
+        <ScrollContainer>
+          {instagramPosts.map((post) => (
+            <VideoCard 
+              key={post.id} 
+              video={post} 
+              onPlay={handlePlayVideo}
+            />
+          ))}
+        </ScrollContainer>
       </section>
 
       {/* Featured Articles */}
@@ -188,13 +183,11 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="scroll-container scrollbar-hide">
-          <div className="scroll-content">
-            {articles.map((article) => (
-              <ArticleCard key={article.id} article={article} />
-            ))}
-          </div>
-        </div>
+        <ScrollContainer>
+          {articles.map((article) => (
+            <ArticleCard key={article.id} article={article} />
+          ))}
+        </ScrollContainer>
       </section>
 
       {/* Locations */}

@@ -62,15 +62,72 @@ body {
   color: #fde047;
 }
 
+.scroll-wrapper {
+  position: relative;
+}
+
 .scroll-container {
   overflow-x: auto;
   padding-bottom: 1rem;
+  scroll-behavior: smooth;
 }
 
 .scroll-content {
   display: flex;
   gap: 2rem;
   width: max-content;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  color: #facc15;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.scroll-button:hover {
+  background: rgba(250, 204, 21, 0.2);
+  border-color: #facc15;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.scroll-button-left {
+  left: -24px;
+}
+
+.scroll-button-right {
+  right: -24px;
+}
+
+@media (max-width: 768px) {
+  .scroll-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .scroll-button-left {
+    left: 8px;
+  }
+  
+  .scroll-button-right {
+    right: 8px;
+  }
 }
 
 /* Categories */

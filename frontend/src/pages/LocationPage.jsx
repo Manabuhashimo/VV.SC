@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import VideoCard from '../components/VideoCard';
 import ArticleCard from '../components/ArticleCard';
+import ScrollContainer from '../components/ScrollContainer';
 import { ChevronRight } from 'lucide-react';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
