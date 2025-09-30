@@ -110,8 +110,52 @@ export const tiktokVideos = [
   }
 ];
 
+// Instagramポストデータ
+export const instagramPosts = [
+  {
+    id: 9,
+    title: "Tokyo Street Fashion Week",
+    thumbnail: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&h=800&fit=crop",
+    likes: "15.2K",
+    views: "89K",
+    category: "Fashion",
+    articleId: 4,
+    platform: "instagram"
+  },
+  {
+    id: 10,
+    title: "Urban Art Gallery Opening",
+    thumbnail: "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&h=800&fit=crop",
+    likes: "8.9K",
+    views: "45K",
+    category: "Art",
+    articleId: 2,
+    platform: "instagram"
+  },
+  {
+    id: 11,
+    title: "Hip-Hop Culture Showcase",
+    thumbnail: "https://images.unsplash.com/photo-1571609803939-54f463a82e6e?w=800&h=800&fit=crop",
+    likes: "22.5K",
+    views: "120K",
+    category: "Music",
+    articleId: 1,
+    platform: "instagram"
+  },
+  {
+    id: 12,
+    title: "Skateboard Park Sessions",
+    thumbnail: "https://images.unsplash.com/photo-1564982752979-3f7bc974735e?w=800&h=800&fit=crop",
+    likes: "18.7K",
+    views: "95K",
+    category: "Sport",
+    articleId: 3,
+    platform: "instagram"
+  }
+];
+
 // 後方互換性のため
-export const videosData = [...youtubeVideos, ...tiktokVideos];
+export const videosData = [...youtubeVideos, ...tiktokVideos, ...instagramPosts];
 
 // 記事データ（モックデータ）
 export const articlesData = [

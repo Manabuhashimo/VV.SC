@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import VideoCard from '../components/VideoCard';
 import ArticleCard from '../components/ArticleCard';
 import CategoryCard from '../components/CategoryCard';
-import { youtubeVideos, tiktokVideos, articlesData, categories } from '../models/data';
+import { youtubeVideos, tiktokVideos, instagramPosts, articlesData, categories } from '../models/data';
 
 const Home = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -61,6 +61,30 @@ const Home = () => {
               <VideoCard 
                 key={video.id} 
                 video={video} 
+                onPlay={handlePlayVideo}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Posts */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">
+            INSTAGRAM <span className="logo-yellow">POSTS</span>
+          </h2>
+          <a href="/posts/instagram" className="view-all-link">
+            View All <ChevronRight size={20} />
+          </a>
+        </div>
+
+        <div className="scroll-container scrollbar-hide">
+          <div className="scroll-content">
+            {instagramPosts.map((post) => (
+              <VideoCard 
+                key={post.id} 
+                video={post} 
                 onPlay={handlePlayVideo}
               />
             ))}

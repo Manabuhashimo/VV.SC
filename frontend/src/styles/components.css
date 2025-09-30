@@ -171,6 +171,10 @@
   background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
 }
 
+.play-button-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
 .video-card:hover .play-button {
   transform: scale(1.1);
 }
@@ -199,6 +203,12 @@
   border: 2px solid #00f2ea;
 }
 
+.platform-badge-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  border: 2px solid transparent;
+}
+
 .video-duration {
   position: absolute;
   top: 1rem;
@@ -207,6 +217,19 @@
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   font-size: 0.875rem;
+}
+
+.video-likes {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .video-category {

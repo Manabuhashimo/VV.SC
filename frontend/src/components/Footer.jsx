@@ -22,6 +22,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><a href="/videos/youtube" className="footer-link">YouTube</a></li>
               <li><a href="/videos/tiktok" className="footer-link">TikTok</a></li>
+              <li><a href="/posts/instagram" className="footer-link">Instagram</a></li>
               <li><a href="/articles" className="footer-link">記事</a></li>
             </ul>
           </div>

@@ -94,7 +94,7 @@ const About = () => {
                 <div className="feature-icon">📺</div>
                 <h3 className="feature-title">動画コンテンツ</h3>
                 <p className="feature-description">
-                  YouTubeとTikTokから厳選されたストリートカルチャーに関する動画を紹介
+                  厳選されたストリートカルチャーに関する動画を紹介
                 </p>
               </div>
               <div className="feature-card">
@@ -115,7 +115,7 @@ const About = () => {
                 <div className="feature-icon">🎯</div>
                 <h3 className="feature-title">キュレーション</h3>
                 <p className="feature-description">
-                  専門エディターが厳選した質の高いコンテンツのみを提供
+                  専門のライターが厳選した質の高いコンテンツのみを提供
                 </p>
               </div>
             </div>

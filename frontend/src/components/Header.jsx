@@ -24,6 +24,7 @@ const Header = () => {
           <nav className="nav">
             <a href="/videos/youtube" className="nav-link">YouTube</a>
             <a href="/videos/tiktok" className="nav-link">TikTok</a>
+            <a href="/posts/instagram" className="nav-link">Instagram</a>
             <a href="/articles" className="nav-link">記事</a>
           </nav>
 
