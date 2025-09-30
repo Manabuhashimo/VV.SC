@@ -36,11 +36,30 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .section-title {
   font-size: 2.25rem;
   font-weight: 900;
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -55,7 +74,21 @@ body {
   color: #facc15;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
   transition: color 0.2s;
+}
+
+@media (max-width: 640px) {
+  .view-all-link {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-all-link {
+    font-size: 0.75rem;
+  }
 }
 
 .view-all-link:hover {
