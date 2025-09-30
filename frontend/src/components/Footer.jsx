@@ -20,8 +20,8 @@ const Footer = () => {
           <div>
             <h4 className="footer-title">コンテンツ</h4>
             <ul className="footer-links">
-              <li><a href="/videos/youtube" className="footer-link">YouTube動画</a></li>
-              <li><a href="/videos/tiktok" className="footer-link">TikTok動画</a></li>
+              <li><a href="/videos/youtube" className="footer-link">YouTube</a></li>
+              <li><a href="/videos/tiktok" className="footer-link">TikTok</a></li>
               <li><a href="/articles" className="footer-link">記事</a></li>
             </ul>
           </div>
