@@ -5,10 +5,9 @@ import Footer from '../components/Footer';
 const About = () => {
   const categories = [
     { name: 'Fashion', icon: '👕', color: 'linear-gradient(to bottom right, #eab308, #f97316)' },
-    { name: 'Street Culture', icon: '🛹', color: 'linear-gradient(to bottom right, #3b82f6, #06b6d4)' },
-    { name: 'Art', icon: '🎨', color: 'linear-gradient(to bottom right, #f97316, #ef4444)' },
     { name: 'Music', icon: '🎵', color: 'linear-gradient(to bottom right, #a855f7, #ec4899)' },
-    { name: 'Sports', icon: '⚽', color: 'linear-gradient(to bottom right, #10b981, #06b6d4)' }
+    { name: 'Art', icon: '🎨', color: 'linear-gradient(to bottom right, #f97316, #ef4444)' },
+    { name: 'Sport', icon: '⚽', color: 'linear-gradient(to bottom right, #3b82f6, #06b6d4)' }
   ];
 
   return (

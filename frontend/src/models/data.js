@@ -1,25 +1,25 @@
 // カテゴリーデータ
 export const categories = [
-    {
-        name: "Hip-Hop",
-        color: "linear-gradient(to bottom right, #a855f7, #ec4899)",
-        icon: "🎤"
-    },
-    {
-        name: "Graffiti",
-        color: "linear-gradient(to bottom right, #f97316, #ef4444)",
-        icon: "🎨"
-    },
-    {
-        name: "Skateboarding",
-        color: "linear-gradient(to bottom right, #3b82f6, #06b6d4)",
-        icon: "🛹"
-    },
-    {
-        name: "Fashion",
-        color: "linear-gradient(to bottom right, #eab308, #f97316)",
-        icon: "👕"
-    }
+  {
+    name: "Fashion",
+    color: "linear-gradient(to bottom right, #eab308, #f97316)",
+    icon: "👕"
+  },
+  {
+    name: "Music",
+    color: "linear-gradient(to bottom right, #a855f7, #ec4899)",
+    icon: "🎵"
+  },
+  {
+    name: "Art",
+    color: "linear-gradient(to bottom right, #f97316, #ef4444)",
+    icon: "🎨"
+  },
+  {
+    name: "Sport",
+    color: "linear-gradient(to bottom right, #3b82f6, #06b6d4)",
+    icon: "⚽"
+  }
 ];
 
 // YouTubeビデオデータ
@@ -159,58 +159,58 @@ export const videosData = [...youtubeVideos, ...tiktokVideos, ...instagramPosts]
 
 // 記事データ（モックデータ）
 export const articlesData = [
-    {
-        id: 1,
-        title: "The Evolution of Tokyo's Underground Hip-Hop Scene",
-        excerpt: "Exploring how Tokyo's hip-hop culture has transformed from underground movement to mainstream phenomenon...",
-        image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&h=400&fit=crop",
-        category: "Hip-Hop",
-        date: "2025-09-28",
-        author: "Yuki Tanaka"
-    },
-    {
-        id: 2,
-        title: "Graffiti as Art: From Vandalism to Gallery Exhibitions",
-        excerpt: "The journey of street art from illegal activity to celebrated contemporary art form in major museums...",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
-        category: "Graffiti",
-        date: "2025-09-27",
-        author: "Marcus Rodriguez"
-    },
-    {
-        id: 3,
-        title: "Skateboarding Culture: More Than Just a Sport",
-        excerpt: "Understanding the deep-rooted culture, community, and lifestyle that defines skateboarding worldwide...",
-        image: "https://images.unsplash.com/photo-1520338258135-607c3cda82b1?w=600&h=400&fit=crop",
-        category: "Skateboarding",
-        date: "2025-09-26",
-        author: "Jake Wilson"
-    },
-    {
-        id: 4,
-        title: "Street Fashion: The New Runway",
-        excerpt: "How street style influencers are reshaping the fashion industry and challenging traditional haute couture...",
-        image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop",
-        category: "Fashion",
-        date: "2025-09-25",
-        author: "Sophie Martin"
-    },
-    {
-        id: 5,
-        title: "Breakdancing Goes Olympic: Cultural Impact",
-        excerpt: "Analyzing the significance of breaking's inclusion in the Olympics and its effect on street culture...",
-        image: "https://images.unsplash.com/photo-1545128485-c400e7702796?w=600&h=400&fit=crop",
-        category: "Hip-Hop",
-        date: "2025-09-24",
-        author: "David Kim"
-    },
-    {
-        id: 6,
-        title: "The Rise of Asian Street Culture on Global Stage",
-        excerpt: "From Seoul to Shanghai, Asian cities are becoming epicenters of contemporary street culture...",
-        image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=600&h=400&fit=crop",
-        category: "Culture",
-        date: "2025-09-23",
-        author: "Min-ji Park"
-    }
+  {
+    id: 1,
+    title: "The Evolution of Tokyo's Underground Hip-Hop Scene",
+    excerpt: "Exploring how Tokyo's hip-hop culture has transformed from underground movement to mainstream phenomenon...",
+    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&h=400&fit=crop",
+    category: "Music",
+    date: "2025-09-28",
+    author: "Yuki Tanaka"
+  },
+  {
+    id: 2,
+    title: "Graffiti as Art: From Vandalism to Gallery Exhibitions",
+    excerpt: "The journey of street art from illegal activity to celebrated contemporary art form in major museums...",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+    category: "Art",
+    date: "2025-09-27",
+    author: "Marcus Rodriguez"
+  },
+  {
+    id: 3,
+    title: "Skateboarding Culture: More Than Just a Sport",
+    excerpt: "Understanding the deep-rooted culture, community, and lifestyle that defines skateboarding worldwide...",
+    image: "https://images.unsplash.com/photo-1520338258135-607c3cda82b1?w=600&h=400&fit=crop",
+    category: "Sport",
+    date: "2025-09-26",
+    author: "Jake Wilson"
+  },
+  {
+    id: 4,
+    title: "Street Fashion: The New Runway",
+    excerpt: "How street style influencers are reshaping the fashion industry and challenging traditional haute couture...",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop",
+    category: "Fashion",
+    date: "2025-09-25",
+    author: "Sophie Martin"
+  },
+  {
+    id: 5,
+    title: "Breakdancing Goes Olympic: Cultural Impact",
+    excerpt: "Analyzing the significance of breaking's inclusion in the Olympics and its effect on street culture...",
+    image: "https://images.unsplash.com/photo-1545128485-c400e7702796?w=600&h=400&fit=crop",
+    category: "Music",
+    date: "2025-09-24",
+    author: "David Kim"
+  },
+  {
+    id: 6,
+    title: "The Rise of Asian Street Culture on Global Stage",
+    excerpt: "From Seoul to Shanghai, Asian cities are becoming epicenters of contemporary street culture...",
+    image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=600&h=400&fit=crop",
+    category: "Fashion",
+    date: "2025-09-23",
+    author: "Min-ji Park"
+  }
 ];
