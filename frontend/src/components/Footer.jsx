@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Youtube } from 'lucide-react';
+import TikTokIcon from './TikTokIcon';
 
 const Footer = () => {
   return (
@@ -38,10 +39,13 @@ const Footer = () => {
             <h4 className="footer-title">フォローする</h4>
             <div className="footer-social">
               <a href="#" className="social-link">
-                <Instagram size={24} />
+                <Youtube size={24} />
               </a>
               <a href="#" className="social-link">
-                <Youtube size={24} />
+                <TikTokIcon size={24} color="#fff" />
+              </a>
+              <a href="#" className="social-link">
+                <Instagram size={24} />
               </a>
             </div>
           </div>

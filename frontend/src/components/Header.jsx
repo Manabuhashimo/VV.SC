@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Youtube } from 'lucide-react';
+import TikTokIcon from './TikTokIcon';
 
 const Header = () => {
   return (
@@ -30,10 +31,13 @@ const Header = () => {
 
           <div className="social-links">
             <a href="#" className="social-link">
-              <Instagram size={20} />
+              <Youtube size={20} />
             </a>
             <a href="#" className="social-link">
-              <Youtube size={20} />
+              <TikTokIcon size={20} color="#fff" />
+            </a>
+            <a href="#" className="social-link">
+              <Instagram size={20} />
             </a>
           </div>
         </div>
